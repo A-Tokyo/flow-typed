@@ -3,7 +3,7 @@ import thesaurus from "thesaurus";
 
 const tokyoSynms: Array<string> = thesaurus.find("tokyo");
 // $ExpectError
-thesaurus.find("x");
+thesaurus.find();
 
 const thesaurusData: { [index: string]: Array<string> } = thesaurus.get();
 // $ExpectError
@@ -13,6 +13,6 @@ const thesaurusDataStr: string = thesaurus.toJson();
 // $ExpectError
 thesaurus.toJson("x");
 
-thesaurus.load("dummyDatFilePath");
+const updatethesaurus: thesaurus = thesaurus.load("dummyDatFilePath");
 // $ExpectError
-thesaurus.load("x");
+thesaurus.load();
