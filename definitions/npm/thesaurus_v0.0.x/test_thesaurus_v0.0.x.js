@@ -15,4 +15,4 @@ thesaurus.toJson("x");
 
 thesaurus.load("dummyDatFilePath");
 // $ExpectError
-thesaurus.load();
+thesaurus.load(2);
