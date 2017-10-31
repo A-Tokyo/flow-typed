@@ -13,6 +13,6 @@ const thesaurusDataStr: string = thesaurus.toJson();
 // $ExpectError
 thesaurus.toJson("x");
 
-const updatethesaurus: thesaurus = thesaurus.load("dummyDatFilePath");
+thesaurus.load("dummyDatFilePath");
 // $ExpectError
 thesaurus.load();
