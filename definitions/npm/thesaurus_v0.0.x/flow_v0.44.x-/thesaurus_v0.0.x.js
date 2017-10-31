@@ -2,8 +2,8 @@ declare module "thesaurus" {
   declare class thesaurusClass {
     find(string): Array<string>;
     load(string): this;
-    get(): { [string]: Array<string> };
-    toJson(): string;
+    get(void): { [string]: Array<string> };
+    toJson(void): string;
   }
 
   declare var exports: thesaurusClass;
