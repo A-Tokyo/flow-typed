@@ -15,3 +15,4 @@ describe('url-join_v4.x.x', () => {
     urlJoin("a", {});
   });
 });
+
